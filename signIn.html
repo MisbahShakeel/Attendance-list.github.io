@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+   <div class="spinner-container" id="spiner">
+            <div class="spinner"></div>
+        </div>
+    <!-- login from-->
+    <div class="logins-container animate__animated animate__flipInX">
+        <div class="logins-body">
+ 
+            <div class="welcome_profile">
+                <h1>Login</h1>
+            <div class="welcome_text">
+                <h6>Welcome Back !</h6>
+                <span>Please Enter your details.</span>
+            </div>
+            <div class="input-container">
+                <div class="form">
+                    <input class="input" placeholder="Email" id="email" required="" type="text">
+                    <span class="input-border"></span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="form">
+                    <input class="input pad-right" placeholder="Password" required="" id="password" type="password">
+                    <span class="input-border"></span>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <button class="signin-btns color-s" id="signInBtn">Sign In</button>
+            </div>
+
+            
+            <div class="signUp-go">
+                <p>Don't have an account yet ?</p><a href="index.html"> Sign Up!</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="databaseConfig.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

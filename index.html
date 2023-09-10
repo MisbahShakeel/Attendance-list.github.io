@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>signUp</title>
+</head>
+        <div class="spinner-container" id="spiner">
+            <div class="spinner"></div>
+        </div>
+        <!-- Signup from  -->
+        <div class="logins-container animate__animated animate__flipInX">
+            <div class="logins-body">
+                <div class="welcome_text">
+                    <h2>Sign Up</h2>
+                    <span>Enter your details to create your account</span>
+                </div>
+                <div class="input-container divided-flex">
+                    <div class="divided">
+                        <div class="form">
+                            <input
+                                class="input"
+                                id="fullName"
+                                placeholder="Full Name"
+                                required=""
+                                type="text"
+                            >
+                            <span class="input-border"></span>
+                        </div>
+                    </div>
+                    <div class="divided">
+                        <div class="form">
+                            <input
+                                class="input"
+                                placeholder="Phone"
+                                id="phone"
+                                required=""
+                                type="number"
+                            >
+                            <span class="input-border"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="form">
+                        <input
+                            class="input"
+                            id="email"
+                            placeholder="Email"
+                            required=""
+                            type="text"
+                        >
+                        <span class="input-border"></span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="form">
+                        <input
+                            class="input pad-right"
+                            autocomplete=""
+                            placeholder="Password"
+                            required=""
+                            id="password"
+                            type="password"
+                        >
+                        <span class="input-border"></span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <button class="signin-btns color-s" id="signupBtn">Sign Up</button>
+                </div>
+                <div class="signUp-go">
+                    <p>Already have an account ?</p>
+                    <a href="signIn.html"> Sign In!</a>
+                </div>
+            </div>
+        </div>
+
+    <script type="module" src="databaseConfig.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html> 

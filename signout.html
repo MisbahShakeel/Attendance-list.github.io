@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendence List</title>
+</head>
+
+<body>
+    <div class="portal">
+        <h1>Attendence Portal</h1>
+        <h2>Class Details</h2>
+        
+            <form id="classForm">
+                <label for="classTimings">Class Timings:</label>
+                <select id="classTimings" required="">
+                <option value="option1">9:00AM-12:00PM</option>
+                <option value="option2">12:00PM-3:00PM</option>
+                <option value="option3">3:00PM-6:00PM</option>
+                <option value="option4">6:00PM-9:00PM</option>
+                </select><br>
+        
+                <label for="teacherName">Teacher's Name:</label>
+                <select id="classTimings" required="">
+                    <option value="option1">Miss Hina</option>
+                    <option value="option2">Miss Iqra</option>
+                    <option value="option3">Miss Qurat-ul-ain</option>
+                    <option value="option4">Miss Tayyaba</option>
+                    </select><br>
+        
+                <label for="sectionName">Section Name:</label>
+                <select id="classTimings" required="">
+                    <option value="option1">Section I</option>
+                    <option value="option2">Section II</option>
+                    <option value="option3">Section III<I></I></option>
+                    <option value="option4">Section IV</option>
+                    </select><br>
+        
+                <label for="courseName">Course Name:</label>
+                <select id="classTimings" required="">
+                    <option value="option1">Web Development</option>
+                    <option value="option2">Web Design</option>
+                    <option value="option3">Techno Kids</option>
+                    <option value="option4">Graphics Design</option>
+                    </select><br>
+        
+                <label for="batchNumber">Batch Number:</label>
+                <select id="classTimings" required="">
+                    <option value="option1">Batch-1</option>
+                    <option value="option2">Batch-2</option>
+                    <option value="option3">Batch-3</option>
+                    <option value="option4">batch-4</option>
+                    </select><br>
+        
+        
+            <div id="classList">
+                <h1>Student Details</h1>
+                <div id="addStudentForm">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="fatherName" placeholder="Father's Name">
+                    <input type="text" id="rollNumber" placeholder="Roll Number">
+                    <input type="text" id="contactNumber" placeholder="Contact Number">
+                    <input type="text" id="cnic" placeholder="CNIC Number">
+                    <input type="text" id="courseName" placeholder="Course Name">
+                    <input type="text" id="className" placeholder="Class Name">
+                    <input type="file" id="picture" accept="image/*">
+                    <button type="button" onclick="addStudent()">Add Student</button>
+                </div>
+            
+                <!-- Attendance marking -->
+                <div id="attendanceForm">
+                    <select id="attendanceStatus">
+                        <option value="Present">Present</option>
+                        <option value="Absent">Absent</option>
+                        <option value="Late">Late</option>
+                        <option value="Leave">Leave</option>
+                    </select>
+                    <input type="text" id="rollNumberInput" placeholder="Enter Roll Number">
+                    <button type="button" onclick="markAttendance()">Mark Attendance</button>
+              
+                </div>
+                <!-- Real-time data display -->
+                <div id="studentDetails"></div>
+            </form>
+            <div class="signOut">
+            <button class="signOut-btns color-s" id="signOutBtn">Sign Out</button>
+        </div>
+    <script type="module" src="databaseConfig.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
